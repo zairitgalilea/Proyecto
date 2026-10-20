@@ -1,0 +1,87 @@
+.contenedor-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: #fff1fb
+}
+
+.tarjeta-login {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+  margin: 50px;
+}
+
+.titulo-login {
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #ffc37ef5;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.grupo-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.grupo-input label {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #3f3f3f;
+  margin-bottom: 10px;
+}
+
+.grupo-input input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.grupo-input input:focus {
+  border-color: #ffc37ef5;
+}
+
+.boton-entrar {
+  width: 100%;
+  background-color: #ffc37ef5;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.boton-entrar:hover {
+  background-color: #ffc37ef5;
+}
+
+.opcion-registro {
+  text-align: center;
+  margin-top: 25px;
+  font-family: 'Arial', sans-serif;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.opcion-registro a {
+  color: #ffc37ef5;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.opcion-registro a:hover {
+  text-decoration: underline;
+}

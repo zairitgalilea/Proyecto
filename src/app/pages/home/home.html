@@ -1,0 +1,45 @@
+<div class="banner-container">
+  <img src="/imagen1.jpg" alt="Mesa con postres" class="banner-img">
+</div>
+
+<section class="intro-section">
+  <div class="intro-title">
+    <h2>Hazlo con cariño</h2>
+  </div>
+  <div class="intro-text">
+    <p>Hazlo con cariño es una página donde puedes encontrar recetas de tus postres favoritos y poder disfrutarlos con tu familia, amigos, novio o contigo mismo 💛</p>
+  </div>
+</section>
+
+<section class="seccion">
+  <h3 class="titulo">¿Qué quieres cocinar?</h3>
+  
+  <div class="contenedor">
+    
+    <div class="opcion" (click)="verCategoria('/comidas')">
+      <div class="contenedor-imagen">
+        <img src="comidas.jpg" alt="Comidas">
+      </div>
+      <span class="nombre">COMIDAS</span>
+    </div>
+
+    <div class="opcion" (click)="verCategoria('/postres')">
+      <div class="contenedor-imagen">
+        <img src="postres.jpg" alt="Postres">
+      </div>
+      <span class="nombre">POSTRES</span>
+    </div>
+
+    <div class="opcion" (click)="verCategoria('/bebidas')">
+      <div class="contenedor-imagen">
+        <img src="bebidas.jpg" alt="Bebidas">
+      </div>
+      <span class="nombre">BEBIDAS</span>
+    </div>
+
+  </div>
+</section>
+
+<footer class="pie-pagina">
+  <p>Para disfrutar una buena comida</p>
+</footer>

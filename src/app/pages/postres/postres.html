@@ -1,0 +1,12 @@
+<div class="pagina-postres">
+  <h2>Nuestros Postres</h2>
+  
+  <div class="contenedor-recetas">
+    @for (receta of recetas; track $index) {
+    } @empty {
+      <div class="mensaje-vacio">
+        <p>No hay recetas de postres disponibles por el momento.</p>
+      </div>
+    }
+  </div>
+</div>

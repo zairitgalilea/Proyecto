@@ -1,0 +1,89 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffc37ef5; 
+  padding: 16px 32px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.navbar-brand span {
+  font-family: 'Bradley Hand', 'Bradley Hand ITC', cursive;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff; 
+  letter-spacing: 1px;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 32px; 
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #ffffff; 
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-item:hover {
+  color: #ef4564; 
+}
+
+.active {
+  font-weight: bold;
+  color: #eb3b5a; 
+}
+
+.search-dropdown {
+  position: absolute; 
+  top: 75px; 
+  right: 50px; 
+  display: flex;
+  align-items: center;
+  background-color: white; 
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15); 
+  z-index: 1000; 
+  animation: slideDown 0.2s ease-out;
+}
+
+.search-input-drop {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px 12px;
+  width: 220px; 
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.search-input-drop:focus {
+  border-color: #f7b731; 
+}
+
+.search-btn-drop {
+  background-color: #f7b731; 
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.search-btn-drop:hover {
+  background-color: #fa8231;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

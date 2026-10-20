@@ -1,0 +1,20 @@
+<nav class="navbar">
+  <div class="navbar-brand">
+    <span>Hazlo con cariño</span>
+  </div>
+
+  <ul class="navbar-links">
+    <li><a routerLink="/home" routerLinkActive="active" class="nav-item">Home</a></li>
+    <li><a (click)="toggleBuscador()" class="nav-item" style="cursor: pointer;">Buscar</a></li>
+    <li><a routerLink="/login" routerLinkActive="active" class="nav-item">Iniciar Sesión</a></li>
+  </ul>
+</nav>
+
+@if (mostrarBuscador) {
+  <div class="search-dropdown">
+    <input type="text" class="search-input-drop" placeholder="Busca tu receta">
+    <button class="search-btn-drop">Buscar</button>
+  </div>
+}
+
+<router-outlet></router-outlet>
